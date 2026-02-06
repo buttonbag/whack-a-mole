@@ -1,13 +1,15 @@
 import HighScores from "./HighScores";
+import { useGame } from "../src/GameContext";
 
 export default function Welcome() {
+  const {start} = useGame();
   return (
     <>
-      <section class="welcome">
+      <section className="welcome">
         <p>Welcome to Whack a Mole!</p>
         <p>Whack a mole to earn points.</p>
         <p>How many can you get?</p>
-        <button onClick={()=>console.log(`clicked!`)}>Play</button>
+        <button onClick={start}>Play</button>
       </section>
       <HighScores />
     </>
