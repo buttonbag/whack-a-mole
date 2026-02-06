@@ -11,4 +11,4 @@ export default function Game() {
   );
 }
 
-// play area displays a current score of 0, a restart button, and a number of holes. 
+
